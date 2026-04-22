@@ -5,7 +5,7 @@
     border-radius: 20px;
     /* box-shadow: 2px 2px 20px rgba(0,0,0,0.5); */
     /* box-shadow: 2px 2px 20px grey; */
-    margin-top: 20px;
+    margin-top: 60px;
     border:1px solid grey;
 }
 .grid{
@@ -135,6 +135,7 @@ h2{
     color: white;
     font-size: 20px;
     font-family:Tahoma, sans-serif;
+    position: relative;
 }
 .nav input{
     padding: 10px 100px;
@@ -145,7 +146,9 @@ h2{
 
 }
 .nav {
+    width: 98%;
     display: flex;
+    position :fixed;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
@@ -167,13 +170,36 @@ h2{
     /* background-color: #ffd15c; */
     color: white;
 }
+.number{
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    top: -16px;
+    border: #0d1117 solid 2px;
+
+}
+.number span{
+    color: white;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+}
 
 /* الموبايل */
 @media (max-width: 768px) {
     .nav {
-        flex-direction: column;
+        /* flex-direction: column;
         align-items: stretch;
-        gap: 10px;
+        gap: 10px; */
+        width: 100%;
+        padding: 10px;
+        gap: 2px;
+
     }
 
     .logo {
@@ -182,12 +208,16 @@ h2{
     }
 
     .nav input {
-        width: 100%;
+        width: 100px;
         padding: 8px;
     }
 
     .return, .cart {
         text-align: center;
+        font-size: 14px;
+    }
+    .search-box button {
+        padding: 5px 10px;
         font-size: 14px;
     }
 }
