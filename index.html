@@ -10,7 +10,10 @@
 <body>
     <div class="nav">
      <div class="logo">
-        amazon
+        <img src="images/photo_٢٠٢٦-٠٤-٢٩_٠١-٥٩-٣٩.jpg" alt=""></i>
+     </div>
+     <div class="logo-a">
+      <img src="images/photo_٢٠٢٦-٠٤-٢٩_٠٢-٠٠-٢٣.jpg" alt="">
      </div>
      <div class="search-box">
         <input type="text" placeholder="Search ">
@@ -19,7 +22,8 @@
         </button>
      </div>
      <div class="return">
-        Returns & Orders
+         <p class="returns">Returns</p>
+         <p class="orders">& Orders</p>
      </div>
      <div class="cart">
         <i class="fa-solid fa-cart-shopping"></i> Cart
@@ -258,10 +262,10 @@
               </div>
               <p class="p1">$36-in stock.</p>
               <p class="p2">Free delivery tomorrow.</p>
-              <select name="" id="">
-                <option value="">1</option>
-                <option value="">2</option>
-                <option value="">3</option>
+              <select name="" id="choice">
+                <option onclick="increase()" value="">1</option>
+                <option onclick="increase2()" value="">2</option>
+                <option onclick="increase3()" value="">3</option>
               </select>
               <div class="buttons">
                <button onclick="increase()" class="btn1">Add to Cart</button>
@@ -271,6 +275,7 @@
           </div>
     </div>
  </div>
+ 
  <script>
   let number=0;
    const increase=() => {
@@ -278,6 +283,13 @@
   number++;
   document.getElementById("num").innerHTML=number;
    }
+  //  const increase2=() => {
+  //   number+=2;
+  //  }
+  //  const increase3=() => {
+  //   number+=3;
+  //  }
+ 
  </script>
    
 </body>
